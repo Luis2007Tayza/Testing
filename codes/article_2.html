@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="../images/logo2.png">
+    <link rel="icon" type="image/x-icon" href="../images/logo2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0px;
+            font-family: "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+
+        .navbar {
+            max-width: 1560px;
+            padding: 20px;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .navbar a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            text-decoration: none;
+            color: black;
+        }
+
+        .navbar-left img {
+            width: 40px;
+            margin-right: 20px;
+
+        }
+
+        .navbar-left div {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .navbar-left div:hover {
+            color: #fcaa1a;
+        }
+
+        .navbar-left,
+        .navbar-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-left>*,
+        .navbar-right>* {
+            padding: 10px;
+        }
+
+        .sign-in {
+            font-weight: 600;
+            border: 1px solid black;
+            border-radius: 40px;
+            padding: 5px 20px 5px 20px;
+        }
+
+        .sign-in:hover {
+            background-color: black;
+            color: #ffff;
+        }
+
+        .burgericon {
+            width: 30px;
+            border: none;
+        }
+
+        .dropdownicon {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown_links {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown_links a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown_links a:hover {
+            background-color: #0850a4;
+        }
+
+        .dropdownicon:hover .dropdown_links {
+            display: block;
+        }
+
+        .dropdownicon:hover .burgericon {
+            background-color: #fcaa1a;
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            .burger_icon,
+            .dropdownicon {
+                display: none;
+            }
+        }
+
+        .header {
+            font-size: 40px;
+        }
+
+        .article {
+            font-size: 20px;
+        }
+
+        .blog {
+            width: 80%;
+            margin: auto;
+        }
+
+
+        table {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            table-layout: fixed;
+            margin: auto;
+        }
+
+        table caption {
+            font-size: 1.5em;
+            margin: .5em 0 .75em;
+        }
+
+        table tr {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: .35em;
+        }
+
+        table th,
+        table td {
+            padding: .625em;
+            text-align: center;
+        }
+
+        table th {
+            font-size: .85em;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            background-color: #fcaa1a;
+        }
+
+        @media screen and (max-width: 600px) {
+            table {
+                border: 0;
+            }
+
+            table caption {
+                font-size: 1.3em;
+            }
+
+            table thead {
+                border: none;
+                clip: rect(0 0 0 0);
+                height: 1px;
+                margin: -1px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                width: 1px;
+            }
+
+            table tr {
+                border-bottom: 3px solid #ddd;
+                display: block;
+                margin-bottom: .625em;
+            }
+
+            table td {
+                border-bottom: 1px solid #ddd;
+                display: block;
+                font-size: .8em;
+                text-align: right;
+            }
+
+            table td::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            table td:last-child {
+                border-bottom: 0;
+            }
+        }
+
+        /* general styling */
+        body {
+            font-family: "Open Sans", sans-serif;
+            line-height: 1.25;
+        }
+    </style>
+    <title>What is Speciatly Coffee?</title>
+</head>
+
+<body>
+
+
+
+    <div class="blog">
+        <p class="header">What is Specialty Coffee?</p>
+        <hr>
+        <img src="../images/specialtycoffee_1.png" alt="Brewing Pour Over Coffee" class="specialtycoffee_1">
+        <p class="article">The term ‘Specialty coffee’ or ‘Speciality coffee’ is used to refer to coffee that is graded
+            80 points or above on a 100
+            point scale by a certified coffee taster SCAA or by a
+            licensed Q Grader(CQI).
+            <br>
+            Specialty coffees are coffees at their peak and are different to other coffee because specialty coffee has
+            been grown at
+            the perfect altitude, at the correct time of year, in the best soil, and then picked at just the right time.
+            All this
+            translates into some of the most exciting and tasty coffee in the world.
+            <br>
+            Check out specailty coffee grading sheet below:
+            <br>
+        <table>
+            <caption>Specialty Coffee Grading Sheet</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Score</th>
+                    <th scope="col">Grade</th>
+                    <th scope="col">Specialty Yes/No</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Score">90-100</td>
+                    <td data-label="Grade">Outstanding</td>
+                    <td data-label="Specialty Yes/No ">Specialty Coffee</td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="Score">85-89.99</td>
+                    <td data-label="Grade">Excellent</td>
+                    <td data-label="Specialty Yes/No">Specialty Coffee</td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="Score">80-84.99</td>
+                    <td data-label="Grade">Very Good</td>
+                    <td data-label="Specialty Yes/No">Specialty Coffee</td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="Score">80</td>
+                    <td data-label="Grade">Below Specialty</td>
+                    <td data-label="Specialty Yes/No">Not Specialty Coffee</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <p class="header">History</p>
+        <p class="article">Speciality coffee has existed for a long time, in one form or another. We tend to think of
+            speciality coffee as being a
+            new trend, yet even as far back as the early 1900s, discerning customers like the Hotel du Crillon in Paris
+            specified
+            that their coffee was to be bought from select micro-lots on specific farms in certain regions of Guatemala.
+            The term
+            “specialty coffee” was first used in the 1970s in the Tea and Coffee Trade Journal, just a few years after
+            the opening
+            of the first Starbucks store. Thanks to stores like Starbucks and Peet’s, coffee went from a modern
+            convenience to a
+            drinking experience. Since then, improvements in agricultural, roasting and brewing technology, and an
+            increased demand
+            for high-quality coffee have put speciality coffee in the hands of coffee lovers across the globe.</p>
+        <br>
+        <p class="header">Coffee Grading</p>
+        <p class="article">Green coffee is graded via visual inspection and cupping. Visual inspection involves taking a
+            350g sample of green
+            coffee beans and counting defective beans. Defects can be Primary (e.g. black beans, sour beans) or
+            Secondary (e.g.
+            broken beans). For a coffee to qualify as “specialty”, it must have zero Primary defects and less than five
+            Secondary
+            defects.
+            <br>
+            Cupping involves roasting the coffee and brewing simply with hot water, and relies on the skill of the
+            taster to assign
+            scores to each of the coffee’s attributes, such the acidity, body, flavor and aroma.
+        </p>
+        <br>
+        <p class="header">Growth of Specialty Coffee</p>
+        <p class="article">In the USA, specialty coffee is spreading nationwide, as specialty companies like Stumptown
+            and Blue Bottle become as
+            well-known as their more commercial counterparts. Daily consumption of specialty coffee in America has risen
+            from 9% in
+            1999 to 34% in 2014.
+            <br>
+            Meanwhile, in the UK, a recent report by Allegra predicts that the specialty coffee market is set for a 13%
+            year on year
+            growth, higher than the 10% predicted for the coffee market as a whole. The result of specialty coffees
+            increasing
+            popularity is mirrored in high street chains, as Starbucks and Costa continue to introduce limited edition
+            single origin
+            coffees in stark contrast to their super-dark roasts or high robusta-content blends. Allegra’s report also
+            predicted a
+            doubling of the current 1,400 speciality coffee shops by 2020, and a year on year growth rate of 17% for the
+            UK roasted
+            speciality coffee market.
+        </p>
+        </p>
+
+    </div>
+</body>
+
+</html>
